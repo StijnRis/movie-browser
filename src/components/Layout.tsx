@@ -11,10 +11,10 @@ export default function Layout() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="/">Home</a>
+                            <a className="nav-link" href={`${import.meta.env.BASE_URL}`}>Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/search">Search</a>
+                            <a className="nav-link" href={`${import.meta.env.BASE_URL}search`}>Search</a>
                         </li>
                     </ul>
                 </div>
