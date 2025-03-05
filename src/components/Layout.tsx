@@ -25,6 +25,7 @@ export default function Layout() {
             <footer className="footer mt-auto py-3 bg-light">
                 <div className="container text-center">
                     <p>&copy; 2025 Movie Browser</p>
+                    <p>Information courtesy of <a href="https://www.imdb.com" target="_blank" rel="noopener noreferrer">IMDb</a>.</p>
                 </div>
             </footer>
         </div>

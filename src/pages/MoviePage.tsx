@@ -14,7 +14,7 @@ export default function MoviePage() {
             setError(null);
 
             try {
-                const data = await getMovieById(id);
+                const data = await getMovieById(id as string);
                 setMovie(data);
             } catch (err) {
                 setError("Something went wrong!");
