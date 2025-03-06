@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Movie } from "../utils/useMovieApi";
 
 interface props {
@@ -13,9 +14,12 @@ export default function MovieCard({ movie }: props) {
             <div className="card-body">
                 <h5 className="card-title">{Title}</h5>
                 <p className="card-text">{Plot}</p>
-                <a href={`${import.meta.env.BASE_URL}movie/${imdbID}`} className="btn btn-primary">
+                <Link
+                    to={`/movie/${imdbID}`}
+                    className="btn btn-primary"
+                >
                     More info
-                </a>
+                </Link>
             </div>
         </div>
     );
